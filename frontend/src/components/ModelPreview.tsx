@@ -14,7 +14,7 @@ export default function ModelPreview() {
       </div>
 
       <p className="mt-4 text-xs text-blue-600 bg-blue-100 p-2 rounded-lg text-center">
-        ⚠️ El proceso de predicción puede tomar varios minutos dependiendo de la longitud de la secuencia.
+        
       </p>
     </div>
   );
