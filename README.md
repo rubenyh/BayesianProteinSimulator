@@ -41,3 +41,5 @@ npm run dev
 - No database is used; all computations are performed on demand.
 - The code is intentionally simplified to support learning and demonstration.
 
+## Figma
+https://www.figma.com/design/WDkOJtUCDorp5lK8hIidzr/Untitled?node-id=0-1&t=mDWFxvnvHuLYkFWR-1
