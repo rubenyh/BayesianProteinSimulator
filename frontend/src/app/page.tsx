@@ -28,9 +28,9 @@ export default function Page() {
     <main className="min-h-screen bg-background flex flex-col">
       <Navbar />
       <section className="flex flex-col lg:flex-row gap-6 p-6 max-w-7xl mx-auto w-full">
-        <SequenceInput onPredict={handlePredict} isLoading={loading} />
-
         <ModelPreview data={prediction} />
+
+        <SequenceInput onPredict={handlePredict} isLoading={loading} />
       </section>
     </main>
   );

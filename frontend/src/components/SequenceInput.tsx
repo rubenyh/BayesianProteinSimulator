@@ -33,7 +33,7 @@ export default function SequenceInput({ onPredict, isLoading }: Props) {
           ${
             isLoading
               ? "bg-gray-400 cursor-not-allowed"
-              : "bg-primary hover:bg-primary shadow-md hover:shadow-lg"
+              : "bg-primary hover:bg-primary shadow-md hover:shadow-lg cursor-pointer"
           }`}
       >
         {isLoading ? "Simulando..." : "Generar estructura 3D"}
