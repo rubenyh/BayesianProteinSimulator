@@ -1,20 +1,37 @@
+"use client";
+
+import { useState } from "react";
 import Navbar from "@/components/Navbar";
 import SequenceInput from "@/components/SequenceInput";
 import ModelPreview from "@/components/ModelPreview";
+import { predictStructure } from "@/lib/api";
 
 export default function Page() {
+  const [prediction, setPrediction] = useState<any>(null);
+  const [loading, setLoading] = useState(false);
+
+  const handlePredict = async (sequence: string) => {
+    setLoading(true);
+    setPrediction(null);
+    try {
+      const result = await predictStructure(sequence);
+      setPrediction(result);
+    } catch (error) {
+      console.error(error);
+      alert("Error conectando al backend");
+    } finally {
+      setLoading(false);
+    }
+  };
+
   return (
-    <main className="min-h-screen bg-gray-50 flex flex-col">
+    <main className="min-h-screen bg-background flex flex-col">
       <Navbar />
-
       <section className="flex flex-col lg:flex-row gap-6 p-6 max-w-7xl mx-auto w-full">
-        <SequenceInput />
-        <ModelPreview />
-      </section>
+        <SequenceInput onPredict={handlePredict} isLoading={loading} />
 
-      <footer className="text-center text-gray-500 py-6 text-sm">
-        Proyecto académico — Inferencia bayesiana
-      </footer>
+        <ModelPreview data={prediction} />
+      </section>
     </main>
   );
 }
