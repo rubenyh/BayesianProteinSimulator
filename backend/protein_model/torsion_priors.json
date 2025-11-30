@@ -1,0 +1,22 @@
+{
+  "ALA": { "phi_mean": -60.0, "phi_std": 30.0 },
+  "ARG": { "phi_mean": -65.0, "phi_std": 30.0 },
+  "ASN": { "phi_mean": -65.0, "phi_std": 30.0 },
+  "ASP": { "phi_mean": -65.0, "phi_std": 30.0 },
+  "CYS": { "phi_mean": -70.0, "phi_std": 30.0 },
+  "GLN": { "phi_mean": -65.0, "phi_std": 30.0 },
+  "GLU": { "phi_mean": -65.0, "phi_std": 30.0 },
+  "GLY": { "phi_mean": -80.0, "phi_std": 40.0 },
+  "HIS": { "phi_mean": -65.0, "phi_std": 30.0 },
+  "ILE": { "phi_mean": -60.0, "phi_std": 25.0 },
+  "LEU": { "phi_mean": -60.0, "phi_std": 25.0 },
+  "LYS": { "phi_mean": -65.0, "phi_std": 30.0 },
+  "MET": { "phi_mean": -60.0, "phi_std": 25.0 },
+  "PHE": { "phi_mean": -60.0, "phi_std": 25.0 },
+  "PRO": { "phi_mean": -75.0, "phi_std": 20.0 },
+  "SER": { "phi_mean": -65.0, "phi_std": 30.0 },
+  "THR": { "phi_mean": -65.0, "phi_std": 30.0 },
+  "TRP": { "phi_mean": -60.0, "phi_std": 25.0 },
+  "TYR": { "phi_mean": -60.0, "phi_std": 25.0 },
+  "VAL": { "phi_mean": -60.0, "phi_std": 25.0 }
+}

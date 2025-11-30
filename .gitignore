@@ -33,7 +33,6 @@ __temp__/
 .idea/
 *.swp
 
-models/
 checkpoints/
 *.pt
 *.ckpt
