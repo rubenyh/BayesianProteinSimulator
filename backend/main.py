@@ -10,7 +10,7 @@ app = FastAPI(
 
 origins = [
     "http://localhost:3000",
-    "https://bayesian-protein-simulator.vercel.app/",
+    "https://bayesian-protein-simulator.vercel.app",
 ]
 
 app.add_middleware(
